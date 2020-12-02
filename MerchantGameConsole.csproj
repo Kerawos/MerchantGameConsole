@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameData\GameController.cs" />
+    <Compile Include="GameData\Game\Game.cs" />
+    <Compile Include="GameData\Player\Merchant.cs" />
+    <Compile Include="GameData\Game\Notification.cs" />
+    <Compile Include="GameData\Item\EItemQuality.cs" />
+    <Compile Include="GameData\Item\Item.cs" />
+    <Compile Include="GameData\Item\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameData\Map\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

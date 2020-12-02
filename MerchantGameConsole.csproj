@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="GameData\GameController.cs" />
     <Compile Include="GameData\Game\Game.cs" />
+    <Compile Include="GameData\Map\ITownBehaviour.cs" />
+    <Compile Include="GameData\Map\Map.cs" />
+    <Compile Include="GameData\Map\Town.cs" />
     <Compile Include="GameData\Player\Merchant.cs" />
     <Compile Include="GameData\Game\Notification.cs" />
     <Compile Include="GameData\Item\EItemQuality.cs" />
@@ -56,8 +59,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GameData\Map\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

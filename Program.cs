@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.Game;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace MerchantGameConsole
     {
         static void Main(string[] args)
         {
+            Game Gm = new Game();
+            Gm.GameStart();
+
         }
     }
 }

@@ -10,9 +10,10 @@ namespace MerchantGameConsole.GameData.Game
     {
         public Game InitializeGame()
         {
-            Notification.WelcomeScreenShow();
-            GameLevelSet();
-            JourneyBeginsShow
+            //Notification.WelcomeScreenShow();
+            //GameLevelSet();
+            //player creation
+            //JourneyBeginsShow
             return new Game();
         }
 

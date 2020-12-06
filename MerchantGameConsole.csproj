@@ -45,11 +45,12 @@
   <ItemGroup>
     <Compile Include="GameData\GameController.cs" />
     <Compile Include="GameData\Game\Game.cs" />
+    <Compile Include="GameData\Game\GameEnd.cs" />
     <Compile Include="GameData\Game\GameStartup.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\Map.cs" />
     <Compile Include="GameData\Map\Town.cs" />
-    <Compile Include="GameData\Player\Merchant.cs" />
+    <Compile Include="GameData\Player\Player.cs" />
     <Compile Include="GameData\Game\Notification.cs" />
     <Compile Include="GameData\Item\EItemQuality.cs" />
     <Compile Include="GameData\Item\Item.cs" />

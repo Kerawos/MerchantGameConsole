@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Game
 {
-    class Merchant
+    class Player
     {
         public string Name { get; set; }
         public int Money { get; set; }
         public List<Item> Items { get; set; }
+        public int Score { get; set; }
 
-    public Merchant(string Name)
+        public Player(string Name)
         {
             this.Name = Name;
         }

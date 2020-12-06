@@ -10,6 +10,7 @@ namespace MerchantGameConsole.GameData.Game
     {
         public int GameLevel { get; set; }
         public Merchant Player { get; set; }
+        
 
         private Notification Notification;
         private GameController GameController;

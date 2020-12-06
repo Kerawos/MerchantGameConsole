@@ -27,7 +27,7 @@ namespace MerchantGameConsole.GameData.Game
             GameController = new GameController();
         }
 
-        public void Play()
+        public void Play(Game Game)
         {
             
             

@@ -17,6 +17,8 @@ namespace MerchantGameConsole.GameData.Game
         {
             this.Name = Name;
         }
+
+
       
     }
 }

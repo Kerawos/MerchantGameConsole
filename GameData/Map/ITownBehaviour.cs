@@ -9,5 +9,6 @@ namespace MerchantGameConsole.GameData.Map
     interface ITownBehaviour
     {
         List<Item> GenerateItemsToSell();
+        List<Item> GenerateNeeds();
     }
 }

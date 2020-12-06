@@ -12,7 +12,8 @@ namespace MerchantGameConsole
         static void Main(string[] args)
         {
             Game NewGame = new GameStartup().InitializeGame();
-            NewGame.Play();
+            NewGame.Play(NewGame);
+            new GameEnd().GameEnding(NewGame.Player);
         }
     }
 }

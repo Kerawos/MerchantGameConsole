@@ -28,15 +28,27 @@ namespace MerchantGameConsole.GameData.Game
 
         }
 
-        public void Play(Game Game)
+        public void GameStart()
         {
             //game startup
             //game play
             //game ending
         }
 
-        
+        private void Play()
+        {
+            //loop + trevel / barter ?
+        }
 
+        private void Travel()
+        {
+            // display map, choose destination, 
+        }
+
+        private void Barter()
+        {
+            // get current town, generate needs, generate shop, switch buy/sell etc
+        }
 
     }
 }

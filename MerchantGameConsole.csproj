@@ -47,6 +47,7 @@
     <Compile Include="GameData\Controller\ControllerIO.cs" />
     <Compile Include="GameData\MainMenu\About\About.cs" />
     <Compile Include="GameData\MainMenu\Game\Game.cs" />
+    <Compile Include="GameData\MainMenu\Game\GameActivity.cs" />
     <Compile Include="GameData\MainMenu\Game\GameEnd.cs" />
     <Compile Include="GameData\MainMenu\Game\GameStartup.cs" />
     <Compile Include="GameData\MainMenu\MainMenu.cs" />

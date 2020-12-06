@@ -36,7 +36,7 @@ namespace MerchantGameConsole
 
         private void MainMenu()
         {
-            MM.MainMenuLoad();
+            MM.Load();
         }
 
         private void Exit()

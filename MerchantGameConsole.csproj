@@ -50,11 +50,12 @@
     <Compile Include="GameData\MainMenu\Game\GameEnd.cs" />
     <Compile Include="GameData\MainMenu\Game\GameStartup.cs" />
     <Compile Include="GameData\MainMenu\MainMenu.cs" />
+    <Compile Include="GameData\MainMenu\MainMenuType.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\World.cs" />
     <Compile Include="GameData\Map\Town.cs" />
     <Compile Include="GameData\Player\Player.cs" />
-    <Compile Include="GameData\MainMenu\Game\Notification.cs" />
+    <Compile Include="GameData\Notification.cs" />
     <Compile Include="GameData\Item\EItemQuality.cs" />
     <Compile Include="GameData\Item\Item.cs" />
     <Compile Include="GameData\Item\Weapon.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.MainMenu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,6 +40,14 @@ namespace MerchantGameConsole.GameData.Game
             return playerName + ", you are the merchant. Your goal is to become rich " +
                 "merchant. You have 25 turns to proof that. Try to travel from one city to another. Buy items " +
                 "and move to other city and try to sell it with a profit. Good luck!";
+        }
+
+        public string MainMenuContext()
+        {
+            List<MainMenuType> types = new List<MainMenuType>();
+
+
+            return "MainMenu: /n 'play' Enter a command and press enter to confirm.";
         }
 
         

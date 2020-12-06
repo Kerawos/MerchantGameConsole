@@ -9,18 +9,18 @@ namespace MerchantGameConsole.GameData.Game
 {
     class Game
     {
-        public int GameLevel { get; set; }
+        public int Difficulty { get; set; }
         public Player Player { get; set; }
         public World World { get; set; }
 
         private Notification Notification;
         private GameController GameController;
 
-        public Game(Player Player, World World, int GameLevel)
+        public Game(Player Player, World World, int Difficulty)
         {
             this.Player = Player;
             this.World = World;
-            this.GameLevel = GameLevel;
+            this.Difficulty = Difficulty;
             Notification = new Notification();
             GameController = new GameController();
         }

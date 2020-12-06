@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Map
 {
-    class Map
+    class World
     {
+        public World WorldGenerate()
+        {
+            return new World();
+        }
 
+        
     }
 }

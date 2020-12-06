@@ -8,7 +8,7 @@ namespace MerchantGameConsole.GameData.Game
 {
     class GameEnd
     {
-        public void GameEnding(Player Player)
+        public void GameEnding(Player player)
         {
             //ending base on player score
         }

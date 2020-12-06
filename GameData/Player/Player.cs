@@ -13,9 +13,9 @@ namespace MerchantGameConsole.GameData.Game
         public List<Item> Items { get; set; }
         public int Score { get; set; }
 
-        public Player(string Name)
+        public Player(string name)
         {
-            this.Name = Name;
+            this.Name = name;
         }
 
 

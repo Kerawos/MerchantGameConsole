@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.Game;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,12 @@ namespace MerchantGameConsole.GameData
 {
     class ControllerDisplay : IControllerIO
     {
+        private Notification n;
+
+        public ControllerDisplay()
+        {
+            this.n = new Notification();
+        }
         public void DisplayToUser(string message)
         {
             Console.WriteLine(message);
@@ -18,6 +25,9 @@ namespace MerchantGameConsole.GameData
             return Console.ReadLine();
         }
 
-
+        public void Gamelaunch()
+        {
+            
+        }
     }
 }

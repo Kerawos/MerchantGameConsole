@@ -8,7 +8,7 @@ namespace MerchantGameConsole.GameData.Map
 {
     class World
     {
-        public World WorldGenerate(int GameDifficulty)
+        public World WorldGenerate(int gameDifficulty)
         {
             return new World();
         }

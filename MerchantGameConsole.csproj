@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="GameData\GameController.cs" />
     <Compile Include="GameData\Game\Game.cs" />
+    <Compile Include="GameData\Game\GameStartup.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\Map.cs" />
     <Compile Include="GameData\Map\Town.cs" />

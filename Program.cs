@@ -11,9 +11,8 @@ namespace MerchantGameConsole
     {
         static void Main(string[] args)
         {
-            Game Gm = new Game();
-            Gm.GameStart();
-
+            Game NewGame = new GameStartup().InitializeGame();
+            NewGame.Play();
         }
     }
 }

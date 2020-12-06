@@ -12,10 +12,12 @@ namespace MerchantGameConsole
     {
         public const string PROGRAM_VERSION = "0.1a";
         private readonly ControllerDisplay CDisp;
+        private readonly MainMenu MM;
 
         public Program()
         {
-            CDisp = new ControllerDisplay();
+            this.CDisp = new ControllerDisplay();
+            this.MM = new MainMenu();
         }
 
         static void Main(string[] args)
@@ -28,17 +30,17 @@ namespace MerchantGameConsole
 
         private void Start()
         {
-            CDisp.GameLaunch();
+            CDisp.ProgramLaunch();
         }
 
         private void MainMenu()
         {
-            //exe
+            
         }
 
         private void Exit()
         {
-            //exit
+            CDisp.ProgramExit();
         }
     }
 }

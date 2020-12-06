@@ -8,5 +8,9 @@ namespace MerchantGameConsole.GameData.MainMenu
 {
     class MainMenu
     {
+        public void MainMenuLoad()
+        {
+
+        }
     }
 }

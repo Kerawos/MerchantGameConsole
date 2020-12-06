@@ -25,10 +25,17 @@ namespace MerchantGameConsole.GameData
             return Console.ReadLine();
         }
 
-        public void GameLaunch()
+        public void ProgramLaunch()
         {
             DisplayToUser(N.GameLaunch() + "/n" + N.PressAnyKey());
             GetResponseFromUser();
         }
+
+        public void ProgramExit()
+        {
+            DisplayToUser(N.GameExit() + "/n" + N.PressAnyKey());
+        }
+
+
     }
 }

@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameData\GameController.cs" />
+    <Compile Include="GameData\ControllerDisplay.cs" />
+    <Compile Include="GameData\ControllerIO.cs" />
     <Compile Include="GameData\Game\Game.cs" />
     <Compile Include="GameData\Game\GameEnd.cs" />
     <Compile Include="GameData\Game\GameStartup.cs" />

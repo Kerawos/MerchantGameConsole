@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData
 {
-    class GameController
+    class ControllerDisplay : IControllerIO
     {
         public void DisplayToUser(string message)
         {
@@ -17,5 +17,7 @@ namespace MerchantGameConsole.GameData
         {
             return Console.ReadLine();
         }
+
+
     }
 }

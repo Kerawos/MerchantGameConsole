@@ -8,43 +8,32 @@ namespace MerchantGameConsole.GameData.Game
 {
     class Notification
     {
-        private GameController GameController;
 
-        public Notification()
+        public string GameLaunch()
         {
-            GameController = new GameController();
+            return "Welcome to my game. Version: " + Program.PROGRAM_VERSION;
         }
 
-        public void Display(string message)
+        public string GameExit()
         {
-            GameController.DisplayToUser(message);
+            return "Thank you for playing my game.";
         }
 
-        public void GameLaunch()
+        public string GameAbout()
         {
-            GameController.DisplayToUser("Welcome to my game. Version: " + Program.PROGRAM_VERSION);
+            return "Game during development. Current version is: " + Program.PROGRAM_VERSION;
         }
 
-        public void GameExit()
+        public string WelcomeScreenShow()
         {
-            GameController.DisplayToUser("Thank you for playing my game.");
+            return "Hello traveler, your journey has begin";
         }
 
-        public void GameAbout()
+        public string JourneyBeginsShow(string playerName)
         {
-            GameController.DisplayToUser("Game during development. Current version is: " + Program.PROGRAM_VERSION);
-        }
-
-        public void WelcomeScreenShow()
-        {
-            GameController.DisplayToUser("Hello traveler, your journey has begin");
-        }
-
-        public void JourneyBeginsShow(string playerName)
-        {
-            GameController.DisplayToUser(playerName + ", you are the merchant. Your goal is to become rich " +
+            return playerName + ", you are the merchant. Your goal is to become rich " +
                 "merchant. You have 25 turns to proof that. Try to travel from one city to another. Buy items " +
-                "and move to other city and try to sell it with a profit. Good luck!");
+                "and move to other city and try to sell it with a profit. Good luck!";
         }
 
         

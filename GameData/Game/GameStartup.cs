@@ -29,7 +29,7 @@ namespace MerchantGameConsole.GameData.Game
         private void PlayerCreate()
         {
             Notification.Display("Please specify your character name and press enter to confirm");
-            string PreName = GameController.GetResponseFromUser();
+            string PreName = ControllerGame.GetResponseFromUser();
 
         }
 
@@ -39,7 +39,7 @@ namespace MerchantGameConsole.GameData.Game
             do
             {
                 Notification.Display("Please set game level: from 1 to 3. (1=easy)");
-                string preLevel = GameController.GetResponseFromUser();
+                string preLevel = ControllerGame.GetResponseFromUser();
                 try
                 {
                     int preLevelInt = Int32.Parse(preLevel);

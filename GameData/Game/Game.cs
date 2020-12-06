@@ -15,7 +15,7 @@ namespace MerchantGameConsole.GameData.Game
         public int Turn { get; set; }
 
         private Notification Notification;
-        private GameController GameController;
+        private ControllerGame GameController;
 
         public Game(Player Player, World World, int Difficulty)
         {
@@ -24,7 +24,7 @@ namespace MerchantGameConsole.GameData.Game
             this.Difficulty = Difficulty;
             this.Turn = 1;
             Notification = new Notification();
-            GameController = new GameController();
+            GameController = new ControllerGame();
         }
 
         public void Play(Game Game)

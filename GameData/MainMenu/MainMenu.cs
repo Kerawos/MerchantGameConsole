@@ -11,22 +11,21 @@ namespace MerchantGameConsole.GameData.MainMenu
         private string Result { get; set; }
 
         private readonly ControllerDisplay CDisp;
-        private readonly List<string> Options;
-        
 
         public MainMenu()
         {
             this.CDisp = new ControllerDisplay();
-            this.Options = new List<string> { "play", "about", "exit" };
-            
         }
 
         public void Load()
         {
             do
             {
-
-            } while (Result == CDisp.GetResponseFromUser())
+                //display menu context
+                Result = CDisp.GetResponseFromUser();
+                
+                //switch result
+            } while (true);
         }
     }
 }

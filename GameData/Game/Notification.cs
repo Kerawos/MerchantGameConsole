@@ -19,6 +19,22 @@ namespace MerchantGameConsole.GameData.Game
         {
             GameController.DisplayToUser(message);
         }
+
+        public void GameLaunch()
+        {
+            GameController.DisplayToUser("Welcome to my game. Version: " + Program.PROGRAM_VERSION);
+        }
+
+        public void GameExit()
+        {
+            GameController.DisplayToUser("Thank you for playing my game.");
+        }
+
+        public void GameAbout()
+        {
+            GameController.DisplayToUser("Game during development. Current version is: " + Program.PROGRAM_VERSION);
+        }
+
         public void WelcomeScreenShow()
         {
             GameController.DisplayToUser("Hello traveler, your journey has begin");

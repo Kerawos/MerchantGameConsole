@@ -47,6 +47,7 @@
     <Compile Include="GameData\Game\Game.cs" />
     <Compile Include="GameData\Game\GameEnd.cs" />
     <Compile Include="GameData\Game\GameStartup.cs" />
+    <Compile Include="GameData\Game\MainMenu.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\World.cs" />
     <Compile Include="GameData\Map\Town.cs" />

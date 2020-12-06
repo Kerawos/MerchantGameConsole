@@ -1,5 +1,6 @@
 ﻿using MerchantGameConsole.GameData;
 using MerchantGameConsole.GameData.Game;
+using MerchantGameConsole.GameData.MainMenu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace MerchantGameConsole
         public Program()
         {
             this.CDisp = new ControllerDisplay();
-            this.MM = new MainMenu();
+            MM = new MainMenu();
         }
 
         static void Main(string[] args)
@@ -35,7 +36,7 @@ namespace MerchantGameConsole
 
         private void MainMenu()
         {
-            
+            MM.MainMenuLoad();
         }
 
         private void Exit()

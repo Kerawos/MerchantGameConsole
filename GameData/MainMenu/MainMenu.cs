@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.MainMenu
 {
-    class MainMenu
+    public class MainMenu
     {
+
         public void MainMenuLoad()
         {
 

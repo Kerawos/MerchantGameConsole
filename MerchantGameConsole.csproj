@@ -43,13 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameData\ControllerDisplay.cs" />
-    <Compile Include="GameData\ControllerIO.cs" />
+    <Compile Include="GameData\Controller\ControllerDisplay.cs" />
+    <Compile Include="GameData\Controller\ControllerIO.cs" />
     <Compile Include="GameData\MainMenu\About\About.cs" />
     <Compile Include="GameData\MainMenu\Game\Game.cs" />
     <Compile Include="GameData\MainMenu\Game\GameEnd.cs" />
     <Compile Include="GameData\MainMenu\Game\GameStartup.cs" />
-    <Compile Include="GameData\MainMenu\Game\MainMenu.cs" />
     <Compile Include="GameData\MainMenu\MainMenu.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\World.cs" />

@@ -9,6 +9,8 @@ namespace MerchantGameConsole.GameData.Game
     class GameStartup
     {
         private readonly ControllerDisplay CDisp;
+        
+        
 
         public GameStartup()
         {
@@ -19,7 +21,8 @@ namespace MerchantGameConsole.GameData.Game
 
         public Game InitializeGame()
         {
-            CDisp.GameLaunch();
+            Player player;
+            int gameDificulty;
             //Notification.WelcomeScreenShow();
             //GameLevelSet();
             //player creation
@@ -28,9 +31,9 @@ namespace MerchantGameConsole.GameData.Game
             return new Game();
         }
 
-        private Merchant CharacterCreate(string Name)
+        private Player PlayerCreate(string Name)
         {
-            Merchant PrePlayer = new Merchant(Name);
+            Player PrePlayer = new Player(Name);
             PrePlayer.Money = 500 * GameLevel;
             PrePlayer.Items.Add(new Weapon().Create(GameLevel));
             return PrePlayer;
@@ -43,7 +46,7 @@ namespace MerchantGameConsole.GameData.Game
 
         }
 
-        private void GameLevelSet()
+        private void GameDifficultySet()
         {
             bool isSet = false;
             do

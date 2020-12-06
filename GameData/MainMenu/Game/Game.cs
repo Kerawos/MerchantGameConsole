@@ -14,8 +14,8 @@ namespace MerchantGameConsole.GameData.Game
         public World World { get; set; }
         public int Turn { get; set; }
 
-        private Notification Notification;
-        private ControllerGame GameController;
+        private GameStartup GameStartup;
+        private GameEnd GameEnd;
 
         public Game(Player Player, World World, int Difficulty)
         {
@@ -23,16 +23,16 @@ namespace MerchantGameConsole.GameData.Game
             this.World = World;
             this.Difficulty = Difficulty;
             this.Turn = 1;
-            Notification = new Notification();
-            GameController = new ControllerGame();
+            this.GameStartup = new GameStartup();
+            this.GameEnd = new GameEnd();
+
         }
 
         public void Play(Game Game)
         {
-            
-            
-            
-
+            //game startup
+            //game play
+            //game ending
         }
 
         

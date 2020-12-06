@@ -14,6 +14,11 @@ namespace MerchantGameConsole.GameData.Game
             return "Welcome to my game. Version: " + Program.PROGRAM_VERSION;
         }
 
+        public string PressAnyKey()
+        {
+            return "Press any key to continue.";
+        }
+
         public string GameExit()
         {
             return "Thank you for playing my game.";
@@ -24,12 +29,12 @@ namespace MerchantGameConsole.GameData.Game
             return "Game during development. Current version is: " + Program.PROGRAM_VERSION;
         }
 
-        public string WelcomeScreenShow()
+        public string WelcomeScreen()
         {
             return "Hello traveler, your journey has begin";
         }
 
-        public string JourneyBeginsShow(string playerName)
+        public string JourneyBegins(string playerName)
         {
             return playerName + ", you are the merchant. Your goal is to become rich " +
                 "merchant. You have 25 turns to proof that. Try to travel from one city to another. Buy items " +

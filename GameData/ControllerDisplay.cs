@@ -9,11 +9,11 @@ namespace MerchantGameConsole.GameData
 {
     class ControllerDisplay : IControllerIO
     {
-        private Notification n;
+        private readonly Notification N;
 
         public ControllerDisplay()
         {
-            this.n = new Notification();
+            this.N = new Notification();
         }
         public void DisplayToUser(string message)
         {
@@ -25,9 +25,10 @@ namespace MerchantGameConsole.GameData
             return Console.ReadLine();
         }
 
-        public void Gamelaunch()
+        public void GameLaunch()
         {
-            
+            DisplayToUser(N.GameLaunch() + "/n" + N.PressAnyKey());
+            GetResponseFromUser();
         }
     }
 }

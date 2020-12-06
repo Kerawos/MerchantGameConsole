@@ -8,8 +8,18 @@ namespace MerchantGameConsole.GameData.Game
 {
     class GameStartup
     {
+        private readonly ControllerDisplay CDisp;
+
+        public GameStartup()
+        {
+            CDisp = new ControllerDisplay();
+        }
+
+
+
         public Game InitializeGame()
         {
+            CDisp.GameLaunch();
             //Notification.WelcomeScreenShow();
             //GameLevelSet();
             //player creation

@@ -21,8 +21,8 @@ namespace MerchantGameConsole
         static void Main(string[] args)
         {
             Program Program = new Program();
-            Program.Start()
-            Program.Execute();
+            Program.Start();
+            Program.MainMenu();
             Program.Exit();
         }
 
@@ -31,7 +31,7 @@ namespace MerchantGameConsole
             CDisp.GameLaunch();
         }
 
-        private void Execute()
+        private void MainMenu()
         {
             //exe
         }

@@ -45,15 +45,17 @@
   <ItemGroup>
     <Compile Include="GameData\ControllerDisplay.cs" />
     <Compile Include="GameData\ControllerIO.cs" />
-    <Compile Include="GameData\Game\Game.cs" />
-    <Compile Include="GameData\Game\GameEnd.cs" />
-    <Compile Include="GameData\Game\GameStartup.cs" />
-    <Compile Include="GameData\Game\MainMenu.cs" />
+    <Compile Include="GameData\MainMenu\About\About.cs" />
+    <Compile Include="GameData\MainMenu\Game\Game.cs" />
+    <Compile Include="GameData\MainMenu\Game\GameEnd.cs" />
+    <Compile Include="GameData\MainMenu\Game\GameStartup.cs" />
+    <Compile Include="GameData\MainMenu\Game\MainMenu.cs" />
+    <Compile Include="GameData\MainMenu\MainMenu.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\World.cs" />
     <Compile Include="GameData\Map\Town.cs" />
     <Compile Include="GameData\Player\Player.cs" />
-    <Compile Include="GameData\Game\Notification.cs" />
+    <Compile Include="GameData\MainMenu\Game\Notification.cs" />
     <Compile Include="GameData\Item\EItemQuality.cs" />
     <Compile Include="GameData\Item\Item.cs" />
     <Compile Include="GameData\Item\Weapon.cs" />

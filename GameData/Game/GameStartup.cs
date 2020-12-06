@@ -13,6 +13,7 @@ namespace MerchantGameConsole.GameData.Game
             //Notification.WelcomeScreenShow();
             //GameLevelSet();
             //player creation
+            //World generation
             //JourneyBeginsShow
             return new Game();
         }

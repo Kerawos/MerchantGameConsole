@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.GameNotification;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,29 @@ namespace MerchantGameConsole.GameData.MainMenuContent
 {
     class About
     {
+        private readonly ControllerDisplay CDisp;
+        private readonly Notification N;
+
+        public About()
+        {
+            this.CDisp = new ControllerDisplay();
+            this.N = new Notification();
+        }
+
+        public void ShowAbout()
+        {
+            CDisp.DisplayToUser(N.GameAbout());
+        }
+
+        private string ExtractsGet()
+        {
+            return null;
+        }
+
+        private string AuthorsGet()
+        {
+            return null;
+        }
     }
 }
 

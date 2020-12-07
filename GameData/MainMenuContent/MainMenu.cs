@@ -28,7 +28,7 @@ namespace MerchantGameConsole.GameData.MainMenuContent
                 switch (Result)
                 {
                     case "play": //MainMenuType.play.ToString():
-                        Game g = new Game();
+                        new Game().GameStart();
                         break;
                     case "about":
                         break;

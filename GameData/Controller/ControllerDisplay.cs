@@ -36,6 +36,11 @@ namespace MerchantGameConsole.GameData
             DisplayToUser(N.GameExit() + "/n" + N.PressAnyKey());
         }
 
+        public void MainMenu()
+        {
+
+        }
+
 
     }
 }

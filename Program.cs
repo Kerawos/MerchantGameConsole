@@ -24,12 +24,12 @@ namespace MerchantGameConsole
         static void Main(string[] args)
         {
             Program Program = new Program();
-            Program.Start();
+            Program.Launch();
             Program.MainMenu();
             Program.Exit();
         }
 
-        private void Start()
+        private void Launch()
         {
             CDisp.ProgramLaunch();
         }

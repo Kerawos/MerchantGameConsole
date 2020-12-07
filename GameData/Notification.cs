@@ -44,7 +44,7 @@ namespace MerchantGameConsole.GameData.Game
 
         public string MainMenuContext()
         {
-            List<MainMenuType> types = new List<MainMenuType>();
+            List<MainMenuType> mainMenuTypes = Enum.GetValues(typeof(MainMenuType)).Cast<MainMenuType>().ToList();
 
 
             return "MainMenu: /n 'play' Enter a command and press enter to confirm.";

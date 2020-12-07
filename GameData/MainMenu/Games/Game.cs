@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Game
 {
-    class Game
+    public class Game
     {
         public int Difficulty { get; set; }
         public Player Player { get; set; }
@@ -17,14 +17,19 @@ namespace MerchantGameConsole.GameData.Game
         private GameStartup GameStartup;
         private GameEnd GameEnd;
 
-        public Game(Player Player, World World, int Difficulty)
+        public Game()
+        {
+            this.GameStartup = new GameStartup();
+            this.GameEnd = new GameEnd();
+        }
+
+        private Game(Player Player, World World, int Difficulty)
         {
             this.Player = Player;
             this.World = World;
             this.Difficulty = Difficulty;
             this.Turn = 1;
-            this.GameStartup = new GameStartup();
-            this.GameEnd = new GameEnd();
+            
 
         }
 

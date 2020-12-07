@@ -46,10 +46,10 @@
     <Compile Include="GameData\Controller\ControllerDisplay.cs" />
     <Compile Include="GameData\Controller\ControllerIO.cs" />
     <Compile Include="GameData\MainMenu\About\About.cs" />
-    <Compile Include="GameData\MainMenu\Game\Game.cs" />
-    <Compile Include="GameData\MainMenu\Game\GameActivity.cs" />
-    <Compile Include="GameData\MainMenu\Game\GameEnd.cs" />
-    <Compile Include="GameData\MainMenu\Game\GameStartup.cs" />
+    <Compile Include="GameData\MainMenu\Games\Game.cs" />
+    <Compile Include="GameData\MainMenu\Games\GameActivity.cs" />
+    <Compile Include="GameData\MainMenu\Games\GameEnd.cs" />
+    <Compile Include="GameData\MainMenu\Games\GameStartup.cs" />
     <Compile Include="GameData\MainMenu\MainMenu.cs" />
     <Compile Include="GameData\MainMenu\MainMenuType.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />

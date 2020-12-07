@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MerchantGameConsole.GameData.Game;
 
 namespace MerchantGameConsole.GameData.MainMenu
 {
@@ -25,9 +26,8 @@ namespace MerchantGameConsole.GameData.MainMenu
                 Result = CDisp.GetResponseFromUser();
                 switch (Result) 
                 {
-                    
-                    case "play":
-                        //play
+                    case "play": //MainMenuType.play.ToString():
+                        Game g = new Game();
                         break;
                     case "about":
                         break;

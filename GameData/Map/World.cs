@@ -12,7 +12,5 @@ namespace MerchantGameConsole.GameData.Map
         {
             return new World();
         }
-
-        
     }
 }

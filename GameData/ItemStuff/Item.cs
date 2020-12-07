@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace MerchantGameConsole.GameData.ItemStuff
+{
     abstract class Item
     {
         public string Name { get; set; }
@@ -20,9 +22,12 @@ using System.Threading.Tasks;
             rnd = new Random();
         }
 
-    public Item()
-    {
+        public Item()
+        {
 
+        }
     }
-    }
+}
+   
+
 

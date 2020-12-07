@@ -45,21 +45,21 @@
   <ItemGroup>
     <Compile Include="GameData\Controller\ControllerDisplay.cs" />
     <Compile Include="GameData\Controller\ControllerIO.cs" />
-    <Compile Include="GameData\MainMenu\About\About.cs" />
-    <Compile Include="GameData\MainMenu\Games\Game.cs" />
-    <Compile Include="GameData\MainMenu\Games\GameActivity.cs" />
-    <Compile Include="GameData\MainMenu\Games\GameEnd.cs" />
-    <Compile Include="GameData\MainMenu\Games\GameStartup.cs" />
-    <Compile Include="GameData\MainMenu\MainMenu.cs" />
-    <Compile Include="GameData\MainMenu\MainMenuType.cs" />
+    <Compile Include="GameData\MainMenuContent\About\About.cs" />
+    <Compile Include="GameData\GameContent\Game.cs" />
+    <Compile Include="GameData\GameContent\GameActivity.cs" />
+    <Compile Include="GameData\GameContent\GameEnd.cs" />
+    <Compile Include="GameData\GameContent\GameStartup.cs" />
+    <Compile Include="GameData\MainMenuContent\MainMenu.cs" />
+    <Compile Include="GameData\MainMenuContent\MainMenuType.cs" />
     <Compile Include="GameData\Map\ITownBehaviour.cs" />
     <Compile Include="GameData\Map\World.cs" />
     <Compile Include="GameData\Map\Town.cs" />
-    <Compile Include="GameData\Player\Player.cs" />
-    <Compile Include="GameData\Notification.cs" />
-    <Compile Include="GameData\Item\EItemQuality.cs" />
-    <Compile Include="GameData\Item\Item.cs" />
-    <Compile Include="GameData\Item\Weapon.cs" />
+    <Compile Include="GameData\PlayerCharacter\Player.cs" />
+    <Compile Include="GameData\GameNotification\Notification.cs" />
+    <Compile Include="GameData\ItemStuff\EItemQuality.cs" />
+    <Compile Include="GameData\ItemStuff\Item.cs" />
+    <Compile Include="GameData\ItemStuff\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

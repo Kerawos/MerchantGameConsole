@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.MainMenu.Game
+namespace MerchantGameConsole.GameData.MainMenuContent
 {
-    enum GameActivity
+    public enum MainMenuType
     {
-        travel, barter,
+        play, about, exit,
     }
 }
+
+

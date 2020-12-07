@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData
+namespace MerchantGameConsole.GameData.GameConent
 {
-    enum EItemQuality
+    enum GameActivity
     {
-        poor, normal, great,
+        travel, barter,
     }
 }
+
+

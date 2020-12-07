@@ -1,15 +1,14 @@
-﻿using MerchantGameConsole.GameData.MainMenu;
+﻿using MerchantGameConsole;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.Game
+namespace MerchantGameConsole.GameData.GameNotification
 {
     class Notification
     {
-
         public string GameLaunch()
         {
             return "Welcome to my game. Version: " + Program.PROGRAM_VERSION;
@@ -45,10 +44,12 @@ namespace MerchantGameConsole.GameData.Game
         public string MainMenuContext()
         {
             List<MainMenuType> mainMenuTypes = Enum.GetValues(typeof(MainMenuType)).Cast<MainMenuType>().ToList();
-            return "MainMenu: /n /n Comands: /n " + mainMenuTypes.Select(type=>"'" + type + "' /n") +
+            return "MainMenu: /n /n Comands: /n " + mainMenuTypes.Select(type => "'" + type + "' /n") +
                 "Enter a command and press enter to confirm.";
         }
 
-        
+
     }
 }
+
+

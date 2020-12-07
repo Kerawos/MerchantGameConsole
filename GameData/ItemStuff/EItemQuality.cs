@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.MainMenu
+namespace MerchantGameConsole.GameData.ItemStuff
 {
-    class About
+    enum EItemQuality
     {
+        poor, normal, great,
     }
 }
+    
+

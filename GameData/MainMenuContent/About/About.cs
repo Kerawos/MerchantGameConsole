@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.MainMenu
+namespace MerchantGameConsole.GameData.MainMenuContent
 {
-    public enum MainMenuType
+    class About
     {
-        play, about, exit,
     }
 }
+
+

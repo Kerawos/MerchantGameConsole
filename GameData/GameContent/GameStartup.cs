@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.Game
+namespace MerchantGameConsole.GameData.GameConent
 {
     class GameStartup
     {
         private readonly ControllerDisplay CDisp;
-        
-        
+
+
 
         public GameStartup()
         {
@@ -68,11 +68,9 @@ namespace MerchantGameConsole.GameData.Game
                     Notification.Display("Game Level cannot be set to: " + preLevel + ", try again.");
                 }
             } while (!isSet);
-
-
         }
-
-
     }
-
 }
+
+
+

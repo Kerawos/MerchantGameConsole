@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MerchantGameConsole.GameData.Game;
 
-namespace MerchantGameConsole.GameData.MainMenu
+namespace MerchantGameConsole.GameData.MainMenuContent
 {
     public class MainMenu
     {
@@ -24,9 +24,10 @@ namespace MerchantGameConsole.GameData.MainMenu
             {
                 CDisp.MainMenu();
                 Result = CDisp.GetResponseFromUser();
-                switch (Result) 
+                switch (Result)
                 {
                     case "play": //MainMenuType.play.ToString():
+                        GameEnd ge = new GameEnd();
                         Game g = new Game();
                         break;
                     case "about":
@@ -36,3 +37,5 @@ namespace MerchantGameConsole.GameData.MainMenu
         }
     }
 }
+
+

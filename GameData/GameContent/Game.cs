@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerchantGameConsole.GameData.Game
+namespace MerchantGameConsole.GameData.GameConent
 {
     public class Game
     {
@@ -29,7 +29,7 @@ namespace MerchantGameConsole.GameData.Game
             this.World = World;
             this.Difficulty = Difficulty;
             this.Turn = 1;
-            
+
 
         }
 
@@ -54,6 +54,7 @@ namespace MerchantGameConsole.GameData.Game
         {
             // get current town, generate needs, generate shop, switch buy/sell etc
         }
-
     }
 }
+
+

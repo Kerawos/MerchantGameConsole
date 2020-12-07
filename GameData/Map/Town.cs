@@ -1,4 +1,4 @@
-﻿using MerchantGameConsole.GameData.Game;
+﻿using MerchantGameConsole.GameData.ItemStuff;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,6 @@ namespace MerchantGameConsole.GameData.Map
 
         public List<Item> GenerateNeeds()
         {
-            //GameEnd gn = new GameEnd();
             throw new NotImplementedException();
         }
     }

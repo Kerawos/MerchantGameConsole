@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.GameNotification;
+using MerchantGameConsole.GameData.PlayerCharacter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

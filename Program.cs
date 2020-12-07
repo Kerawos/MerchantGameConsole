@@ -1,6 +1,6 @@
 ﻿using MerchantGameConsole.GameData;
-using MerchantGameConsole.GameData.Game;
-using MerchantGameConsole.GameData.MainMenu;
+using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.MainMenuContent;
 using System;
 using System.Collections.Generic;
 using System.Linq;

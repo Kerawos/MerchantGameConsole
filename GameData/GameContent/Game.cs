@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole.GameData.Map;
+using MerchantGameConsole.GameData.PlayerCharacter;
 using System;
 using System.Collections.Generic;
 using System.Linq;

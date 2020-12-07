@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.GameConent;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MerchantGameConsole.GameData.Game;
 
 namespace MerchantGameConsole.GameData.MainMenuContent
 {
@@ -27,7 +28,6 @@ namespace MerchantGameConsole.GameData.MainMenuContent
                 switch (Result)
                 {
                     case "play": //MainMenuType.play.ToString():
-                        GameEnd ge = new GameEnd();
                         Game g = new Game();
                         break;
                     case "about":

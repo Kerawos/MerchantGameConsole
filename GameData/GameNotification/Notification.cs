@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole;
+using MerchantGameConsole.GameData.MainMenuContent;
 using System;
 using System.Collections.Generic;
 using System.Linq;

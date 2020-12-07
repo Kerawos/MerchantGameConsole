@@ -38,7 +38,7 @@ namespace MerchantGameConsole.GameData
 
         public void MainMenu()
         {
-
+            DisplayToUser(N.MainMenuContext() + "/n" + N.PressAnyKey());
         }
 
 

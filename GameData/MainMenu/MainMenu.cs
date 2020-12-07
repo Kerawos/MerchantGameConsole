@@ -21,11 +21,18 @@ namespace MerchantGameConsole.GameData.MainMenu
         {
             do
             {
-                //display menu context
+                CDisp.MainMenu();
                 Result = CDisp.GetResponseFromUser();
-                
-                //switch result
-            } while (true);
+                switch (Result) 
+                {
+                    
+                    case "play":
+                        //play
+                        break;
+                    case "about":
+                        break;
+                }
+            } while (Result != MainMenuType.exit.ToString());
         }
     }
 }

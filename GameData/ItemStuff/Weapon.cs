@@ -30,9 +30,9 @@ namespace MerchantGameConsole.GameData.ItemStuff
 
         public Weapon Create(double modifier)
         {
-            return new Weapon("Weapon", rnd.Next(
+            return new Weapon("Weapon", Rnd.Next(
                 (int)(100 * modifier), (int)(200 * modifier)), 
-                    (EItemQuality)rnd.Next(Enum.GetNames(typeof(EItemQuality)).Length));
+                    (EItemQuality)Rnd.Next(Enum.GetNames(typeof(EItemQuality)).Length));
         }
     }
     

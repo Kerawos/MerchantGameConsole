@@ -25,7 +25,7 @@ namespace MerchantGameConsole.GameData.GameConent
         {
             CDisp.DisplayToUser(N.WelcomeScreen());
             int gameDificulty = GameDifficultySet();
-            Player player;
+            //Player player;
             //GameLevelSet();
             //player creation
             //World generation

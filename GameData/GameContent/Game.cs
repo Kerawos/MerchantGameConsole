@@ -24,11 +24,11 @@ namespace MerchantGameConsole.GameData.GameConent
             this.GameEnd = new GameEnd();
         }
 
-        private Game(Player Player, World World, int Difficulty)
+        private Game(Player player, World world, int difficulty)
         {
-            this.Player = Player;
-            this.World = World;
-            this.Difficulty = Difficulty;
+            this.Player = player;
+            this.World = world;
+            this.Difficulty = difficulty;
             this.Turn = 1;
 
 

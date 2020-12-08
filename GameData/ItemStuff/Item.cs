@@ -12,14 +12,14 @@ namespace MerchantGameConsole.GameData.ItemStuff
         public string Name { get; set; }
         public int Price { get; set; }
         public EItemQuality Quality { get; set; }
-        protected Random rnd { get; set; }
+        public Random Rnd { get; set; }
 
-        public Item(string Name, int Price, EItemQuality Quality)
+        public Item(string name, int price, EItemQuality quality)
         {
-            this.Name = Name;
-            this.Price = Price;
-            this.Quality = Quality;
-            rnd = new Random();
+            this.Name = name;
+            this.Price = price;
+            this.Quality = quality;
+            this.Rnd = new Random();
         }
 
         public Item()

@@ -11,7 +11,7 @@ namespace MerchantGameConsole.GameData.ItemStuff
     public class Weapon : Item
     {
 
-        private Weapon(string Name, int Price, EItemQuality Quality) : base(Name, Price, Quality)
+        private Weapon(string name, int price, EItemQuality quality) : base(name, price, quality)
         {
 
         }

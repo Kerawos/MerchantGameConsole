@@ -27,23 +27,23 @@ namespace MerchantGameConsole.GameData.Controller
 
         public void ProgramLaunch()
         {
-            DisplayToUser(N.GameLaunch() + "/n" + N.PressAnyKey());
+            DisplayToUser(N.GameLaunch() + "\r\n" + N.PressAnyKey());
             GetResponseFromUser();
         }
 
         public void ProgramExit()
         {
-            DisplayToUser(N.GameExit() + "/n" + N.PressAnyKey());
+            DisplayToUser(N.GameExit() + "\r\n" + N.PressAnyKey());
         }
 
         public void MainMenu()
         {
-            DisplayToUser(N.MainMenuContext() + "/n" + N.PressAnyKey());
+            DisplayToUser(N.MainMenuContext() + "\r\n" + N.PressAnyKey());
         }
 
         public void GameAbout()
         {
-            DisplayToUser(N.GameAbout() + "/n" + N.PressAnyKey());
+            DisplayToUser(N.GameAbout() + "\r\n" + N.PressAnyKey());
         }
 
 

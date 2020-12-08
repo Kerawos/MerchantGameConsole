@@ -45,8 +45,8 @@ namespace MerchantGameConsole.GameData.GameNotification
         public string MainMenuContext()
         {
             List<MainMenuType> mainMenuTypes = Enum.GetValues(typeof(MainMenuType)).Cast<MainMenuType>().ToList();
-            return "MainMenu: /n /n Comands: /n " + mainMenuTypes.Select(type => "'" + type + "' /n") +
-                "Enter a command and press enter to confirm.";
+            return "MainMenu: \r\n\r\n Comands: \r\n " + mainMenuTypes.Select(type => "'" + type + "' \r\n") +
+                "\r\n Enter a command and press enter to confirm.";
         }
 
 

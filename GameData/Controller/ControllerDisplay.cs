@@ -41,6 +41,11 @@ namespace MerchantGameConsole.GameData.Controller
             DisplayToUser(N.MainMenuContext() + "/n" + N.PressAnyKey());
         }
 
+        public void GameAbout()
+        {
+            DisplayToUser(N.GameAbout() + "/n" + N.PressAnyKey());
+        }
+
 
     }
 }

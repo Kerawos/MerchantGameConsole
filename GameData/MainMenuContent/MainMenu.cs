@@ -31,6 +31,7 @@ namespace MerchantGameConsole.GameData.MainMenuContent
                         new Game().GameStart();
                         break;
                     case "about":
+                        CDisp.GameAbout();
                         break;
                 }
             } while (Result != MainMenuType.exit.ToString());

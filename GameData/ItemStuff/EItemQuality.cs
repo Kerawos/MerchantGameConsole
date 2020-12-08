@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.ItemStuff
 {
-    enum EItemQuality
+    public enum EItemQuality
     {
         poor, normal, great,
     }

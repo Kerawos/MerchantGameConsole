@@ -12,21 +12,20 @@ namespace MerchantGameConsole.GameData.GameConent
     class GameStartup
     {
         private readonly ControllerDisplay CDisp;
-
-
+        private readonly Notification N;
 
         public GameStartup()
         {
             CDisp = new ControllerDisplay();
+            N = new Notification();
         }
-
 
 
         public Game InitializeGame()
         {
+            CDisp.DisplayToUser(N.WelcomeScreen());
+            int gameDificulty = GameDifficultySet();
             Player player;
-            int gameDificulty;
-            //Notification.WelcomeScreenShow();
             //GameLevelSet();
             //player creation
             //World generation
@@ -34,43 +33,36 @@ namespace MerchantGameConsole.GameData.GameConent
             return new Game();
         }
 
-        private Player PlayerCreate(string Name)
-        {
-            Player PrePlayer = new Player(Name);
-            PrePlayer.Money = 500 * GameLevel;
-            PrePlayer.Items.Add(new Weapon().Create(GameLevel));
-            return PrePlayer;
-        }
+        
 
-        private void PlayerCreate()
+        private void PlayerCreateNew()
         {
-            Notification.Display("Please specify your character name and press enter to confirm");
-            string PreName = ControllerGame.GetResponseFromUser();
+            //Notification.Display("Please specify your character name and press enter to confirm");
+            //string PreName = ControllerGame.GetResponseFromUser();
 
         }
 
-        private void GameDifficultySet()
+        private int GameDifficultySet()
         {
-            bool isSet = false;
-            do
+            for (int i = 0; i < 3; i++)
             {
-                Notification.Display("Please set game level: from 1 to 3. (1=easy)");
-                string preLevel = ControllerGame.GetResponseFromUser();
+                CDisp.DisplayToUser("Please set game level: from 1 to 3. (1=easy)");
+                string preLevel = CDisp.GetResponseFromUser();
                 try
                 {
                     int preLevelInt = Int32.Parse(preLevel);
                     if (preLevelInt <= 3 || preLevelInt > 0)
                     {
-                        this.GameLevel = preLevelInt;
-                        return;
+                        return preLevelInt;
                     }
                     throw new Exception("PreLevel input out of scope!");
                 }
                 catch
                 {
-                    Notification.Display("Game Level cannot be set to: " + preLevel + ", try again.");
+                    CDisp.DisplayToUser("Game Level cannot be set to: " + preLevel + ", try again.");
                 }
-            } while (!isSet);
+            } 
+            throw new Exception("Too many attemts during game difficulty set.");
         }
     }
 }

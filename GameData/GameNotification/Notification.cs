@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.GameNotification
 {
-    class Notification
+    public class Notification
     {
         public string GameLaunch()
         {

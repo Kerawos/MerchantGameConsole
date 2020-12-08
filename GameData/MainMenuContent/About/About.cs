@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.MainMenuContent
 {
-    class About
+    public class About
     {
         private readonly ControllerDisplay CDisp;
         private readonly Notification N;

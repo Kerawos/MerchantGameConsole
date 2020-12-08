@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.ItemStuff
 {
-    abstract class Item
+    public abstract class Item
     {
         public string Name { get; set; }
         public int Price { get; set; }

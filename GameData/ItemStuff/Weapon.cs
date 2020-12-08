@@ -8,7 +8,7 @@ using MerchantGameConsole.GameData;
 
 namespace MerchantGameConsole.GameData.ItemStuff
 {
-    class Weapon : Item
+    public class Weapon : Item
     {
 
         private Weapon(string Name, int Price, EItemQuality Quality) : base(Name, Price, Quality)
@@ -28,9 +28,11 @@ namespace MerchantGameConsole.GameData.ItemStuff
         }
 
 
-        public Weapon Create(int modifier)
+        public Weapon Create(double modifier)
         {
-            return new Weapon("Weapon", rnd.Next(100 * modifier, 200 * modifier), (EItemQuality)rnd.Next(Enum.GetNames(typeof(EItemQuality)).Length));
+            return new Weapon("Weapon", rnd.Next(
+                (int)(100 * modifier), (int)(200 * modifier)), 
+                    (EItemQuality)rnd.Next(Enum.GetNames(typeof(EItemQuality)).Length));
         }
     }
     

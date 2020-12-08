@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Map
 {
-    interface ITownBehaviour
+    public interface ITownBehaviour
     {
         List<Item> GenerateItemsToSell();
         List<Item> GenerateNeeds();

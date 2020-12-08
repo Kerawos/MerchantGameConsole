@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Map
 {
-    abstract class Town : ITownBehaviour
+    public abstract class Town : ITownBehaviour
     {
         public string Name { get; set; }
         public List<Item> Items { get; set; }

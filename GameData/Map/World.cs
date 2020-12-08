@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Map
 {
-    class World
+    public class World
     {
         public World WorldGenerate(int gameDifficulty)
         {

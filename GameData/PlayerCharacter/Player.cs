@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.PlayerCharacter
 {
-    class Player
+    public class Player
     {
         public string Name { get; set; }
         public int Money { get; set; }
@@ -19,8 +19,6 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
             this.Name = name;
         }
 
-
-      
     }
 }
 

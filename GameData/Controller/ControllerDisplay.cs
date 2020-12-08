@@ -1,4 +1,4 @@
-﻿using MerchantGameConsole.GameData.Game;
+﻿using MerchantGameConsole.GameData.GameNotification;
 using System;
 using System.Collections.Generic;
 using System.Linq;

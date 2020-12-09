@@ -12,7 +12,7 @@ namespace MerchantGameConsole.GameData.ItemStuff
         public string Name { get; set; }
         public int Price { get; set; }
         public EItemQuality Quality { get; set; }
-        public Random Rnd { get; set; }
+        protected Random Rnd { get; set; }
 
         public Item(string name, int price, EItemQuality quality)
         {

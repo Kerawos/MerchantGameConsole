@@ -23,9 +23,5 @@ namespace MerchantGameConsole.GameData.ItemStuff.Tests
             
         }
 
-        public void Test2()
-        {
-
-        }
     }
 }

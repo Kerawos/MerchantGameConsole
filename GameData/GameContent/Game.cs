@@ -57,10 +57,6 @@ namespace MerchantGameConsole.GameData.GameConent
             // get current town, generate needs, generate shop, switch buy/sell etc
         }
 
-        public int testAdd(int x, int y)
-        {
-            return x * y * y * x * 5;
-        }
     }
 }
 

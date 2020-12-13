@@ -11,8 +11,13 @@ namespace MerchantGameConsole.GameData.GameConent
     {
         public void GameEnding(Player player)
         {
-            //ending base on player score
+            switch (player.GetScore())
+            {
+                case (0 to 100):
+                    break;
+            }
         }
+                
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole;
+using MerchantGameConsole.GameData.GameConent;
 using MerchantGameConsole.GameData.MainMenuContent;
 using System;
 using System.Collections.Generic;
@@ -38,7 +39,7 @@ namespace MerchantGameConsole.GameData.GameNotification
         public string JourneyBegins(string playerName)
         {
             return playerName + ", you are the merchant. Your goal is to become rich " +
-                "merchant. You have 25 turns to proof that. Try to travel from one city to another. Buy items " +
+                "merchant. You have " + Game.TURN_LIMIT + " turns to proof that. Try to travel from one city to another. Buy items " +
                 "and move to other city and try to sell it with a profit. Good luck!";
         }
 

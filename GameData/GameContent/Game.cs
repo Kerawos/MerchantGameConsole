@@ -16,6 +16,7 @@ namespace MerchantGameConsole.GameData.GameConent
         public Player Player { get; set; }
         public World World { get; set; }
         public int Turn { get; set; }
+        public const int TURN_LIMIT = 25;
 
         private GameStartup GameStartup;
         private GameEnd GameEnd;
@@ -57,13 +58,14 @@ namespace MerchantGameConsole.GameData.GameConent
                 switch (result)
                 {
                     case "travel":
-                       //
+                        //
                         break;
                     case "barter":
                         //
                         break;
                 }
-            } while (result != "exit");
+                Turn++;
+            } while (result != "exit" || Turn >= TURN_LIMIT);
         }
 
     }

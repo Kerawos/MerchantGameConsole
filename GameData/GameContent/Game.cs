@@ -42,10 +42,9 @@ namespace MerchantGameConsole.GameData.GameConent
 
         public void GameStart()
         {
-            Game game = new Game();
-            game = GameStartup.InitializeGame();
-            Play();
-            //game ending
+            Game game = GameStartup.InitializeGame();
+            game.Play();
+            new GameEnd().GameEnding(game.Player);
         }
 
         private void Play()
@@ -58,24 +57,13 @@ namespace MerchantGameConsole.GameData.GameConent
                 switch (result)
                 {
                     case "travel":
-                        new Game().GameStart();
+                       //
                         break;
                     case "barter":
-                        CDisp.GameAbout();
+                        //
                         break;
                 }
             } while (result != "exit");
-        }
-
-        private void Travel()
-        {
-            // display map, choose destination, 
-        }
-
-        private void Barter()
-        {
-
-            // get current town, generate needs, generate shop, switch buy/sell etc
         }
 
     }

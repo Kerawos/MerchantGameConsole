@@ -23,23 +23,22 @@ namespace MerchantGameConsole.GameData.GameConent
 
         public Game InitializeGame()
         {
+            Game game = new Game();
             CDisp.DisplayToUser(N.WelcomeScreen());
-            int gameDificulty = GameDifficultySet();
-            //Player player;
-            //GameLevelSet();
-            //player creation
-            //World generation
-            //JourneyBeginsShow
+            game.Difficulty = GameDifficultySet();
+            game.Player = PlayerCreateNew(game.Difficulty);
+            game.World = new Map.World().WorldGenerate(game.Difficulty);
+            CDisp.DisplayToUser(N.JourneyBegins(game.Player.Name));
             return new Game();
         }
 
         
 
-        private void PlayerCreateNew()
+        private Player PlayerCreateNew(int gameDifficulty)
         {
             //Notification.Display("Please specify your character name and press enter to confirm");
             //string PreName = ControllerGame.GetResponseFromUser();
-
+            return new Player();
         }
 
         private int GameDifficultySet()

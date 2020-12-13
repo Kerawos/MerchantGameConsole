@@ -1,4 +1,5 @@
-﻿using MerchantGameConsole.GameData.Map;
+﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.Map;
 using MerchantGameConsole.GameData.PlayerCharacter;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,13 @@ namespace MerchantGameConsole.GameData.GameConent
 
         private GameStartup GameStartup;
         private GameEnd GameEnd;
+        private readonly ControllerDisplay CDisp;
 
         public Game()
         {
             this.GameStartup = new GameStartup();
             this.GameEnd = new GameEnd();
+            this.CDisp = new ControllerDisplay();
         }
 
         private Game(Player player, World world, int difficulty)
@@ -36,6 +39,8 @@ namespace MerchantGameConsole.GameData.GameConent
 
         public void GameStart()
         {
+            Game game = new Game();
+            game = GameStartup.InitializeGame();
             //game startup
             //game play
             //game ending

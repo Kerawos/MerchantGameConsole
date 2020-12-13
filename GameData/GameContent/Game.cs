@@ -44,9 +44,9 @@ namespace MerchantGameConsole.GameData.GameConent
 
         public void GameStart()
         {
-            Game game = GameStartup.InitializeGame();
-            game.Play();
-            new GameEnd().GameEnding(game.Player);
+            GameStartup.InitializeGame();
+            Play();
+            GameEnd.GameEnding(Player);
         }
 
         private void Play()

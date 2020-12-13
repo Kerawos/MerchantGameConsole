@@ -64,6 +64,12 @@ namespace MerchantGameConsole.GameData.Controller
             DisplayToUser(N.GamePlayOption(location));
         }
 
+        public void NextTurnInfo(int turn, int score)
+        {
+            ViewClear();
+            DisplayToUser(N.NextTurnInfo(turn, score));
+        }
+
 
     }
 }

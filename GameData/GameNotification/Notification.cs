@@ -55,11 +55,18 @@ namespace MerchantGameConsole.GameData.GameNotification
         public string GamePlayOption(string location)
         {
             return "You are in : " + location + " \r\n " +
-                "What you want to do? /r/r /r/n" +
-                "travel /r/n " +
-                "barter /r/n" +
-                "exit /r/n" +
+                "What you want to do? \r\n\r\n" +
+                "travel \r\n " +
+                "barter \r\n" +
+                "exit \r\n" +
                 "Enter a command and press enter to confirm.";
+        }
+
+        public string NextTurnInfo(int turn, int score)
+        {
+            return "Next turn. \r\n\r\n " +
+                "Current turn: " + turn + "\r\n\r\n" +
+                "Current score: " + score;
         }
 
 

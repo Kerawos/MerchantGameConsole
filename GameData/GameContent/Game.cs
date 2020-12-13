@@ -66,8 +66,14 @@ namespace MerchantGameConsole.GameData.GameConent
                         //
                         break;
                 }
-                Turn++;
+                NextTurn();
             } while (result != "exit" || Turn >= TURN_LIMIT);
+        }
+
+        private void NextTurn()
+        {
+            Turn++;
+            CDisp.NextTurnInfo(Turn, Player.GetScore());
         }
 
     }

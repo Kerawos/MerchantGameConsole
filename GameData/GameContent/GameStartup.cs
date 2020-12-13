@@ -28,7 +28,8 @@ namespace MerchantGameConsole.GameData.GameConent
             CDisp.DisplayToUser(N.WelcomeScreen());
             game.Difficulty = GameDifficultySet();
             game.Player = PlayerCreateNew(game.Difficulty);
-            game.World = new Map.World().WorldGenerate(game.Difficulty);
+            game.World = new Map.World(game.Difficulty);
+            game.Player.location = game.World.Towns[0];
             CDisp.DisplayToUser(N.JourneyBegins(game.Player.Name));
             return game;
         }

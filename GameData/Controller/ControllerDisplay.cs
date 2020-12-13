@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole.GameData.GameNotification;
+using MerchantGameConsole.GameData.Map;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,6 +56,12 @@ namespace MerchantGameConsole.GameData.Controller
             ViewClear();
             DisplayToUser(N.GameAbout() + "\r\n" + N.PressAnyKey());
             GetResponseFromUser();
+        }
+
+        public void GamePlay(string location)
+        {
+            ViewClear();
+            DisplayToUser(N.GamePlayOption(location));
         }
 
 

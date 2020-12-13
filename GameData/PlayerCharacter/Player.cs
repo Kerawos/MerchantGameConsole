@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole.GameData.ItemStuff;
+using MerchantGameConsole.GameData.Map;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
         public int Money { get; set; }
         public List<Item> Items { get; set; }
         private int Score { get; set; }
+        public Town location { get; set; }
 
         public Player(string name)
         {

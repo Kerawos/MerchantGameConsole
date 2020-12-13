@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.GameNotification;
 using MerchantGameConsole.GameData.Map;
 using MerchantGameConsole.GameData.PlayerCharacter;
 using System;
@@ -19,12 +20,14 @@ namespace MerchantGameConsole.GameData.GameConent
         private GameStartup GameStartup;
         private GameEnd GameEnd;
         private readonly ControllerDisplay CDisp;
+        private readonly Notification N;
 
         public Game()
         {
             this.GameStartup = new GameStartup();
             this.GameEnd = new GameEnd();
             this.CDisp = new ControllerDisplay();
+            this.N = new Notification();
         }
 
         private Game(Player player, World world, int difficulty)
@@ -41,13 +44,27 @@ namespace MerchantGameConsole.GameData.GameConent
         {
             Game game = new Game();
             game = GameStartup.InitializeGame();
-            //game play
+            Play();
             //game ending
         }
 
         private void Play()
         {
-            //loop + trevel / barter ?
+            string result;
+            do
+            {
+                CDisp.GamePlay(Player.location.Name);
+                result = CDisp.GetResponseFromUser();
+                switch (result)
+                {
+                    case "travel":
+                        new Game().GameStart();
+                        break;
+                    case "barter":
+                        CDisp.GameAbout();
+                        break;
+                }
+            } while (result != "exit");
         }
 
         private void Travel()

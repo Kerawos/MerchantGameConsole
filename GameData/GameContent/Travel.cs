@@ -1,4 +1,4 @@
-﻿using MerchantGameConsole.GameData.GameConent;
+﻿using MerchantGameConsole.GameData.PlayerCharacter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace MerchantGameConsole.GameData.GameContent
 {
     class Travel
     {
-        public void TravelTo(Game game)
+        public void TravelTo(Player player)
         {
 
         }

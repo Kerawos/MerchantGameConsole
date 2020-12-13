@@ -1,4 +1,5 @@
 ﻿using MerchantGameConsole.GameData.Controller;
+using MerchantGameConsole.GameData.GameContent;
 using MerchantGameConsole.GameData.GameNotification;
 using MerchantGameConsole.GameData.Map;
 using MerchantGameConsole.GameData.PlayerCharacter;
@@ -50,6 +51,7 @@ namespace MerchantGameConsole.GameData.GameConent
 
         private void Play()
         {
+            Travel travel = new Travel();
             string result;
             do
             {
@@ -58,7 +60,7 @@ namespace MerchantGameConsole.GameData.GameConent
                 switch (result)
                 {
                     case "travel":
-                        //
+                        travel.TravelTo(Player);
                         break;
                     case "barter":
                         //

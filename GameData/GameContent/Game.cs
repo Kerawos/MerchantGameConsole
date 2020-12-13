@@ -38,8 +38,6 @@ namespace MerchantGameConsole.GameData.GameConent
             this.World = world;
             this.Difficulty = difficulty;
             this.Turn = 1;
-
-
         }
 
         public void GameStart()
@@ -64,7 +62,7 @@ namespace MerchantGameConsole.GameData.GameConent
                         travel.TravelComplete(Player);
                         break;
                     case "barter":
-                        //
+                        // todo barter
                         break;
                 }
                 NextTurn();

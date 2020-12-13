@@ -42,8 +42,6 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
             this.Score = Money + Items.Count() * MoneyStarting / 2;
         }
 
-
-
     }
 }
 

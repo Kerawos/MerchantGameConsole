@@ -100,7 +100,5 @@ namespace MerchantGameConsole.GameData.Controller
             DisplayToUser(N.GameEndScoreGood(score) + "\r\n" + N.PressAnyKey());
         }
 
-
-
     }
 }

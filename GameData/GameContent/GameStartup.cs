@@ -34,6 +34,7 @@ namespace MerchantGameConsole.GameData.GameConent
             return game;
         }
 
+
         private int GameDifficultySet()
         {
             for (int i = 0; i < 5; i++)
@@ -56,6 +57,7 @@ namespace MerchantGameConsole.GameData.GameConent
             } 
             throw new Exception("Too many attemts during game difficulty set.");
         }
+
 
         private Player PlayerCreateNew(int gameDifficulty)
         {

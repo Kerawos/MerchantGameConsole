@@ -18,6 +18,7 @@ namespace MerchantGameConsole.GameData.GameContent
             this.CDisp = new ControllerDisplay();
         }
 
+
         public void TravelTo(Player player, World world)
         {
             CDisp.TravelTo(AvailableLocationsGet(player.location, world.Towns));

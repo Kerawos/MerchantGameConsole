@@ -69,6 +69,17 @@ namespace MerchantGameConsole.GameData.GameNotification
                 "Current score: " + score;
         }
 
+        public string TravelWhere(List<string> locations)
+        {
+            return "Choose location you are want to go:\r\n\r\n" +
+                 String.Join("\r\n", locations);
+        }
+
+        public string TravelCompelte(string currentLocation)
+        {
+            return "After long trip, you are able to reach: " + currentLocation + ", good job!";
+        }
+
 
     }
 }

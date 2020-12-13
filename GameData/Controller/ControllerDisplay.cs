@@ -67,8 +67,21 @@ namespace MerchantGameConsole.GameData.Controller
         public void NextTurnInfo(int turn, int score)
         {
             ViewClear();
-            DisplayToUser(N.NextTurnInfo(turn, score));
+            DisplayToUser(N.NextTurnInfo(turn, score) + "\r\n" + N.PressAnyKey());
         }
+
+        public void TravelTo(List<String> locations)
+        {
+            ViewClear();
+            DisplayToUser(N.TravelWhere(locations));
+        }
+
+        public void TravelComplete(string currentLocation)
+        {
+            ViewClear();
+            DisplayToUser(N.TravelCompelte(currentLocation) + "\r\n" + N.PressAnyKey());
+        }
+
 
 
     }

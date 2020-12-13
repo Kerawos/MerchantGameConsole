@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.GameConent
@@ -32,18 +33,9 @@ namespace MerchantGameConsole.GameData.GameConent
             return new Game();
         }
 
-        
-
-        private Player PlayerCreateNew(int gameDifficulty)
-        {
-            //Notification.Display("Please specify your character name and press enter to confirm");
-            //string PreName = ControllerGame.GetResponseFromUser();
-            return new Player();
-        }
-
         private int GameDifficultySet()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
                 CDisp.DisplayToUser("Please set game level: from 1 to 3. (1=easy)");
                 string preLevel = CDisp.GetResponseFromUser();
@@ -62,6 +54,28 @@ namespace MerchantGameConsole.GameData.GameConent
                 }
             } 
             throw new Exception("Too many attemts during game difficulty set.");
+        }
+
+        private Player PlayerCreateNew(int gameDifficulty)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                CDisp.DisplayToUser("What is your name?");
+                string preName = CDisp.GetResponseFromUser();
+                if (preName.Length < 3)
+                {
+                    CDisp.DisplayToUser("Your name: " + preName + " cannot be shorther thank 3 letters. Try again.");
+                }
+                else if (Regex.IsMatch(preName, @"^[a-zA-Z]+$"))
+                {
+                    CDisp.DisplayToUser("Your name: " + preName + " can contain only letters. Try again.");
+                }
+                else
+                {
+                    return new Player(preName, gameDifficulty);
+                }
+            }
+            throw new Exception("Too many attemts during player creation");
         }
     }
 }

@@ -41,7 +41,6 @@ namespace MerchantGameConsole.GameData.GameConent
         {
             Game game = new Game();
             game = GameStartup.InitializeGame();
-            //game startup
             //game play
             //game ending
         }

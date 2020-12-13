@@ -82,6 +82,24 @@ namespace MerchantGameConsole.GameData.Controller
             DisplayToUser(N.TravelCompelte(currentLocation) + "\r\n" + N.PressAnyKey());
         }
 
+        public void GameEndBad(int score)
+        {
+            ViewClear();
+            DisplayToUser(N.GameEndScoreBad(score) + "\r\n" + N.PressAnyKey());
+        }
+
+        public void GameEndNormal(int score)
+        {
+            ViewClear();
+            DisplayToUser(N.GameEndScoreNormal(score) + "\r\n" + N.PressAnyKey());
+        }
+
+        public void GameEndGood(int score)
+        {
+            ViewClear();
+            DisplayToUser(N.GameEndScoreGood(score) + "\r\n" + N.PressAnyKey());
+        }
+
 
 
     }

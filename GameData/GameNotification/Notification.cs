@@ -80,6 +80,22 @@ namespace MerchantGameConsole.GameData.GameNotification
             return "After long trip, you are able to reach: " + currentLocation + ", good job!";
         }
 
+        public string GameEndScoreBad(int score)
+        {
+            return "";
+        }
+
+        public string GameEndScoreNormal(int score)
+        {
+            return "";
+        }
+
+        public string GameEndScoreGood(int score)
+        {
+            return "";
+        }
+
+
 
     }
 }

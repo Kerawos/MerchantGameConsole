@@ -60,7 +60,8 @@ namespace MerchantGameConsole.GameData.GameConent
                 switch (result)
                 {
                     case "travel":
-                        travel.TravelTo(Player);
+                        travel.TravelTo(Player, World);
+                        travel.TravelComplete(Player);
                         break;
                     case "barter":
                         //

@@ -30,7 +30,7 @@ namespace MerchantGameConsole.GameData.GameConent
             game.Player = PlayerCreateNew(game.Difficulty);
             game.World = new Map.World().WorldGenerate(game.Difficulty);
             CDisp.DisplayToUser(N.JourneyBegins(game.Player.Name));
-            return new Game();
+            return game;
         }
 
         private int GameDifficultySet()

@@ -7,10 +7,18 @@ using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.Map
 {
-    public abstract class Town : ITownBehaviour
+    public class Town : ITownBehaviour
     {
         public string Name { get; set; }
-        public List<Item> Items { get; set; }
+        public int CityDifficulty { get; set; }
+        private List<Item> Items { get; set; }
+
+        public Town(string name, int difficulty)
+        {
+            this.Name = name;
+            this.CityDifficulty = difficulty;
+        }
+
 
         public List<Item> GenerateItemsToSell()
         {

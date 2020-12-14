@@ -46,6 +46,7 @@
     <Compile Include="GameData\Controller\ControllerDisplay.cs" />
     <Compile Include="GameData\Controller\IControllerIO.cs" />
     <Compile Include="GameData\GameContent\Travel.cs" />
+    <Compile Include="GameData\ItemStuff\Armor.cs" />
     <Compile Include="GameData\ItemStuff\ArmorType.cs" />
     <Compile Include="GameData\ItemStuff\Factory\ArmorFactory.cs" />
     <Compile Include="GameData\ItemStuff\Factory\IItemFactory.cs" />

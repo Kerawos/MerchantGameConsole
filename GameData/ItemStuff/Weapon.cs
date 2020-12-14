@@ -16,10 +16,6 @@ namespace MerchantGameConsole.GameData.ItemStuff
         {
 
         }
-
-      
- 
     }
-    
 }
 

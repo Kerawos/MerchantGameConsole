@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameData\Controller\ControllerDisplay.cs" />
-    <Compile Include="GameData\Controller\ControllerIO.cs" />
+    <Compile Include="GameData\Controller\IControllerIO.cs" />
     <Compile Include="GameData\GameContent\Travel.cs" />
     <Compile Include="GameData\MainMenuContent\About\About.cs" />
     <Compile Include="GameData\GameContent\Game.cs" />

@@ -46,6 +46,13 @@
     <Compile Include="GameData\Controller\ControllerDisplay.cs" />
     <Compile Include="GameData\Controller\IControllerIO.cs" />
     <Compile Include="GameData\GameContent\Travel.cs" />
+    <Compile Include="GameData\ItemStuff\ArmorType.cs" />
+    <Compile Include="GameData\ItemStuff\Factory\ArmorFactory.cs" />
+    <Compile Include="GameData\ItemStuff\Factory\IItemFactory.cs" />
+    <Compile Include="GameData\ItemStuff\Factory\ItemFactory.cs" />
+    <Compile Include="GameData\ItemStuff\Factory\WeaponFactory.cs" />
+    <Compile Include="GameData\ItemStuff\Item.cs" />
+    <Compile Include="GameData\ItemStuff\WeaponType.cs" />
     <Compile Include="GameData\MainMenuContent\About\About.cs" />
     <Compile Include="GameData\GameContent\Game.cs" />
     <Compile Include="GameData\GameContent\GameActivity.cs" />
@@ -59,7 +66,6 @@
     <Compile Include="GameData\PlayerCharacter\Player.cs" />
     <Compile Include="GameData\GameNotification\Notification.cs" />
     <Compile Include="GameData\ItemStuff\EItemQuality.cs" />
-    <Compile Include="GameData\ItemStuff\Item.cs" />
     <Compile Include="GameData\ItemStuff\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

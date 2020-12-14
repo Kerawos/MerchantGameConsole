@@ -13,12 +13,7 @@ namespace MerchantGameConsole.GameData.ItemStuff
         public int Price { get; set; }
         public EItemQuality Quality { get; set; }
         protected Random Rnd { get; set; }
-
-
-        public Item()
-        {
-
-        }
+        public const int PRICE_BASE = 100;
 
 
         public Item(string name, int price, EItemQuality quality)
@@ -29,9 +24,8 @@ namespace MerchantGameConsole.GameData.ItemStuff
             this.Rnd = new Random();
         }
 
-        
     }
 }
-   
+
 
 

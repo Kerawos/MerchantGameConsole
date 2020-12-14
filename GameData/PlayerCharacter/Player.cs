@@ -32,10 +32,11 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
         {
             this.Money = (int)(MoneyStarting * gameDifficulty);
             this.Items = new List<Item>() {
-                new Weapon().Create(gameDifficulty),
-                new Weapon().Create(gameDifficulty),
-                new Weapon().Create(gameDifficulty)};
+                new WeaponFactory().CreateRandomItem(gameDifficulty),
+                new WeaponFactory().CreateRandomItem(gameDifficulty),
+                new WeaponFactory().CreateRandomItem(gameDifficulty)};
         }
+
 
         public int GetScore()
         {

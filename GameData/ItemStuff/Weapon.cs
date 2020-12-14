@@ -10,30 +10,15 @@ namespace MerchantGameConsole.GameData.ItemStuff
 {
     public class Weapon : Item
     {
+        public WeaponType MyType { get; set; }
 
-        private Weapon(string name, int price, EItemQuality quality) : base(name, price, quality)
+        public Weapon(string name, int price, EItemQuality quality, WeaponType myType) : base(name, price, quality)
         {
 
         }
 
-        public Weapon()
-        {
-
-        }
-
-
-        public Weapon Create()
-        {
-            return new Weapon("Weapon", 100, EItemQuality.normal);
-        }
-
-
-        public Weapon Create(double modifier)
-        {
-            return new Weapon("Weapon", Rnd.Next(
-                (int)(100 * modifier), (int)(200 * modifier)), 
-                    (EItemQuality)Rnd.Next(Enum.GetNames(typeof(EItemQuality)).Length));
-        }
+      
+ 
     }
     
 }

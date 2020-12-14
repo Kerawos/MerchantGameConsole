@@ -49,7 +49,7 @@ namespace MerchantGameConsole.GameData.GameConent
 
         private void Play()
         {
-            Travel travel = new Travel();
+            ITravel travel = new ITravel();
             string result;
             do
             {

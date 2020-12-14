@@ -62,6 +62,7 @@ namespace MerchantGameConsole.GameData.GameConent
 
         private Player PlayerCreateNew(int gameDifficulty)
         {
+            Player prePlayer = new Player();
             for (int i = 0; i < 5; i++)
             {
                 CDisp.DisplayToUser("What is your name?");
@@ -70,9 +71,10 @@ namespace MerchantGameConsole.GameData.GameConent
                 {
                     CDisp.DisplayToUser("Your name: " + preName + " cannot be shorther thank 3 letters. Try again.");
                 }
-                else if (Regex.IsMatch(preName, @"^[a-zA-Z]+$"))
+                else if (!prePlayer.IsCorrectname(preName))
                 {
-                    CDisp.DisplayToUser("Your name: " + preName + " can contain only letters. Try again.");
+                    CDisp.DisplayToUser("Your name: " + preName + " is incorrected. Name can contain only letters. " +
+                        "Minimum 3 characters. Try again.");
                 }
                 else
                 {

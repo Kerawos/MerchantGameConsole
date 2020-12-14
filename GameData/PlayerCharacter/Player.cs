@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MerchantGameConsole.GameData.PlayerCharacter
@@ -16,6 +17,11 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
         public List<Item> Items { get; set; }
         private int Score { get; set; }
         public Town location { get; set; }
+
+        public Player()
+        {
+
+        }
 
         public Player(string name)
         {
@@ -40,6 +46,11 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
         private void ScoreUpdate()
         {
             this.Score = Money + Items.Count() * MoneyStarting / 2;
+        }
+
+        public bool IsCorrectname(string name)
+        {
+            return Regex.IsMatch(name, @"^[a-zA-Z]+$");
         }
 
     }

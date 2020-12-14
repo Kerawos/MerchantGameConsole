@@ -34,7 +34,7 @@ namespace MerchantGameConsole.GameData.PlayerCharacter
             this.Items = new List<Item>() {
                 new WeaponFactory().CreateRandomItem(gameDifficulty),
                 new WeaponFactory().CreateRandomItem(gameDifficulty),
-                new WeaponFactory().CreateRandomItem(gameDifficulty)};
+                new ArmorFactory().CreateRandomItem(gameDifficulty)};
         }
 
 

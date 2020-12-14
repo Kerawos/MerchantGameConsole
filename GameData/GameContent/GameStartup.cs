@@ -25,6 +25,7 @@ namespace MerchantGameConsole.GameData.GameConent
         public Game InitializeGame()
         {
             Game game = new Game();
+            CDisp.ViewClear();
             CDisp.DisplayToUser(N.WelcomeScreen());
             game.Difficulty = GameDifficultySet();
             game.Player = PlayerCreateNew(game.Difficulty);

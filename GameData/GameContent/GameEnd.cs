@@ -21,17 +21,11 @@ namespace MerchantGameConsole.GameData.GameConent
         public void GameEnding(Player player)
         {
             if (player.GetScore() < 0)
-            {
                 CDisp.GameEndBad(player.GetScore());
-            }
             else if (player.GetScore() < 1000)
-            {
                 CDisp.GameEndNormal(player.GetScore());
-            }
             else
-            {
                 CDisp.GameEndGood(player.GetScore());
-            }
         }
                 
     }

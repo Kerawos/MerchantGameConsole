@@ -47,9 +47,7 @@ namespace MerchantGameConsole.GameData.GameConent
                 {
                     int preLevelInt = Int32.Parse(preLevel);
                     if (preLevelInt <= 3 || preLevelInt > 0)
-                    {
                         return preLevelInt;
-                    }
                     throw new Exception("PreLevel input out of scope!");
                 }
                 catch
@@ -69,18 +67,12 @@ namespace MerchantGameConsole.GameData.GameConent
                 CDisp.DisplayToUser("What is your name?");
                 string preName = CDisp.GetResponseFromUser();
                 if (preName.Length < 3)
-                {
                     CDisp.DisplayToUser("Your name: " + preName + " cannot be shorther thank 3 letters. Try again.");
-                }
                 else if (!prePlayer.IsCorrectname(preName))
-                {
                     CDisp.DisplayToUser("Your name: " + preName + " is incorrected. Name can contain only letters. " +
                         "Minimum 3 characters. Try again.");
-                }
                 else
-                {
                     return new Player(preName, gameDifficulty);
-                }
             }
             throw new Exception("Too many attemts during player creation");
         }

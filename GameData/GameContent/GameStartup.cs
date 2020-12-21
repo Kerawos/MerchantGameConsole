@@ -42,6 +42,7 @@ namespace MerchantGameConsole.GameData.GameConent
             {
                 CDisp.DisplayToUser("Please set game level: from 1 to 3. (1=easy)");
                 string preLevel = CDisp.GetResponseFromUser();
+
                 try
                 {
                     int preLevelInt = Int32.Parse(preLevel);

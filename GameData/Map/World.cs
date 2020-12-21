@@ -24,8 +24,10 @@ namespace MerchantGameConsole.GameData.Map
                 throw new Exception("Game difficulty error. Game diffuculty is set to: " + gameDifficulty +
                     ", this is beyond the acceptance level 1-3.");
             }
+
             int worldSize = 3 + gameDifficulty;
             this.Towns = new List<Town>();
+
             for (int i = 0; i < worldSize; i++)
             {
                 this.Towns.Add(new Town(TownNames[0], gameDifficulty));
